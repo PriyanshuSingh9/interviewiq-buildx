@@ -1,41 +1,129 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# <p align="center">BrainCircuit InterviewIQ</p>
 
-## Getting Started
+<p align="center">
+  <strong>One interviewer. Unlimited potential.</strong>
+</p>
 
-First, run the development server:
+<p align="center">
+  <img src="./public/screenshot_landing.png" width="100%" alt="InterviewIQ Landing Page">
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🚀 Overview
+
+**InterviewIQ** is an agentic AI-powered mock interview platform designed to bridge the gap between candidate preparation and real-world interviewer expectations. Unlike static Q&A tools, InterviewIQ features an autonomous AI agent that thinks, adapts, and probes deeper based on your unique profile and real-time responses.
+
+Build your confidence by mastering **Behavioral**, **Technical**, and **System Design** rounds with an AI that interviews just like a real Engineering Manager.
+
+## 🎯 The Challenge: Hackathon Problem Statement
+### The Solution
+We built an agentic platform that autonomously conducts end-to-end mock interviews tailored to a candidate's target role, experience level, and resume. Our AI agent goes beyond scripts; it detects weak answers, probes deeper into technical trade-offs, and provides structured, actionable feedback.
+
+---
+
+## 🧠 The Agentic Workflow
+
+InterviewIQ demonstrates sophisticated agentic behavior across the entire interview lifecycle:
+
+- **Pre-Interview (Ingestion)**: Autonomously parses resumes and GitHub repositories to extract architectural skeletons and skill sets, generating a 100% personalized interview plan.
+- **During Interview (Adaptive Logic)**: The agent doesn't just ask questions — it listens and adapts. It can interrupt, ask follow-up questions on technical deep-dives, and transition naturally between rounds.
+- **Post-Interview (Intelligent Synthesis)**: Delivers a comprehensive executive report featuring radar charts, communication analysis, knowledge depth scoring, and a personalized roadmap for improvement.
+
+---
+
+## ✨ Core Features
+
+| Phase | Feature | Description |
+| :--- | :--- | :--- |
+| **Ingestion** | **Resume & GitHub Parsing** | Extracts your actual experience to avoid generic "Google" style questions. |
+| **Preparation** | **Custom Interview Plans** | Generates specific modules for System Design, Coding, and Leadership. |
+| **Live Agent** | **Dynamic Questioning** | Agent probes for "Why?" and "Trade-offs" instead of just "What?". |
+| **Analytics** | **Deep-Dive Feedback** | Actionable metrics on confidence, technical depth, and communication. |
+| **Experience** | **Premium UI/UX** | Stunning MongoDB-inspired dark mode with smooth Framer Motion animations. |
+
+---
+
+## 🖼️ Screenshots
+
+### The Command Center
+*Upload your materials and watch the agent generate your custom interview plan.*
+![Dashboard](./public/screenshot_dashboard.png)
+
+### Landing Page
+*A high-performance gateway to your interview preparation.*
+![Landing Page](./public/screenshot_landing.png)
+
+## 🛠️ Tech Stack
+
+- **Core Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/) with a MongoDB-inspired design system
+- **Authentication**: [Clerk](https://clerk.com/) (GitHub & Google OAuth)
+- **Database**: [Neon](https://neon.tech/) (Serverless PostgreSQL)
+- **ORM**: [Prisma](https://www.prisma.io/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+ 
+- A Neon PostgreSQL database
+- Clerk API keys
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/interviewiq.git
+   cd interviewiq
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Environment Setup**
+   Create a `.env` file in the root:
+   ```env
+   DATABASE_URL="your_neon_db_url"
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=...
+   CLERK_SECRET_KEY=...
+   ```
+
+4. **Run the Development Server**
+   ```bash
+   npm run dev
+   ```
+
+Open [http://localhost:3000](http://localhost:3000) to start your first mock interview.
+
+---
+
+## 📁 Project Structure
+
+```
+interviewiq/
+├── app/               # Next.js App Router (Dashboard, Interview, Reports)
+├── components/        # Reusable UI components (Navbar, Bento-grid)
+├── prisma/            # Schema and database migrations
+├── public/            # Static assets and screenshots
+├── lib/               # Utility functions and database clients
+└── _prd/             # Detailed architectural documentation
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 👥 Team: Code Red
 
-## Team: Code Red
-**Members:**
-- Rudra Agrawal (Team Lead)
-- Priyanshu Singh
-- Arpit Gupta
-- Deepanshu Khatri
+- **Rudra Agrawal** — Team Lead
+- **Priyanshu Singh**
+- **Arpit Gupta**
+- **Deepanshu Khatri**
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*For detailed implementation specs, refer to the [`_prd/`](./_prd/) directory.*
