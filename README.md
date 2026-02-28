@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="./public/file.svg" width="60" alt="InterviewIQ Logo" />
   <h1>InterviewIQ</h1>
   <p><strong>One interviewer. Unlimited potential.</strong></p>
 </div>
