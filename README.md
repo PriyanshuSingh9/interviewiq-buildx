@@ -11,7 +11,7 @@
 
 ## Overview
 
-**InterviewIQ** is an agentic AI-powered mock interview platform designed to bridge the gap between candidate preparation and real-world interviewer expectations. Unlike static Q&A tools, InterviewIQ features an autonomous AI agent that thinks, adapts, and probes deeper — based on your unique profile and real-time responses.
+**InterviewIQ** is an agentic AI-powered mock interview platform designed to bridge the gap between candidate preparation and real-world interviewer expectations. Unlike static Q&A tools, InterviewIQ features an autonomous AI agent that thinks, adapts, and probes deeper — based on your unique profile and real-time responses. **It grows with you, becoming more nuanced and contextually aware as you navigate the interview process.**
 
 Build confidence by mastering **Behavioral**, **Technical**, **System Design**, and **Coding** rounds with an AI that interviews just like a real Engineering Manager.
 
