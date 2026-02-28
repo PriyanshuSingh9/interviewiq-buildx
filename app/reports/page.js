@@ -184,13 +184,7 @@ export default function ReportsPage() {
                                                 )}
                                             </div>
                                         </div>
-                                        <Link
-                                            href="/dashboard"
-                                            onClick={(e) => e.stopPropagation()}
-                                            className="px-3 py-1.5 bg-white/5 hover:bg-white/10 border border-gray-700/50 rounded-lg text-[11px] font-semibold text-gray-300 transition-colors shrink-0 hidden sm:flex items-center gap-1.5"
-                                        >
-                                            Create Session <ChevronRight size={12} />
-                                        </Link>
+
                                         <span className="text-[10px] font-mono text-gray-500 bg-gray-800/80 px-2.5 py-1 rounded-full shrink-0">
                                             {preset.sessions.length} session{preset.sessions.length !== 1 ? 's' : ''}
                                         </span>
